@@ -184,13 +184,12 @@
 
 (global-set-key (kbd "C-M-<backspace>") 'kill-back-to-indentation)
 
-
 ;;----------------------------------------------------------------------------
 ;; Page break lines
 ;;----------------------------------------------------------------------------
-(require-package 'page-break-lines)
-(global-page-break-lines-mode)
-(diminish 'page-break-lines-mode)
+(require 'formfeed-hline)
+(formfeed-hline-mode 1)
+
 
 ;;----------------------------------------------------------------------------
 ;; Fill column indicator
