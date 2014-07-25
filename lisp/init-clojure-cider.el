@@ -22,6 +22,7 @@
   (add-hook 'cider-repl-mode-hook 'subword-mode)
   (add-hook 'cider-repl-mode-hook 'paredit-mode)
   (define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc)
+  (define-key cider-mode-map (kbd "C-c z") 'cider-switch-to-relevant-repl-buffer)
 
   ;; nrepl isn't based on comint
   (add-hook 'cider-repl-mode-hook

@@ -20,7 +20,9 @@
   (define-key paredit-mode-map [remap backward-kill-sentence] nil)
 
   ;; Allow my global binding of M-? to work when paredit is active
-  (define-key paredit-mode-map (kbd "M-?") nil))
+  (define-key paredit-mode-map (kbd "M-?") nil)
+  (define-key paredit-mode-map (kbd "M-)") 'paredit-forward-slurp-sexp)
+  (define-key paredit-mode-map (kbd "M-(") 'paredit-backward-slurp-sexp))
 
 
 ;; Compatibility with other modes
