@@ -19,9 +19,9 @@
 (after-load 'magit
   (define-key magit-status-mode-map (kbd "C-M-<up>") 'magit-goto-parent-section))
 
-(require-package 'fullframe)
-(after-load 'magit
-  (fullframe magit-status magit-mode-quit-window))
+;; (require-package 'fullframe)
+;; (after-load 'magit
+;;   (fullframe magit-status magit-mode-quit-window))
 
 
 ;;; When we start working on git-backed files, use git-wip if available
