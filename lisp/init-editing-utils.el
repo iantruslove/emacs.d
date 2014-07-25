@@ -185,10 +185,12 @@
 (global-set-key (kbd "C-M-<backspace>") 'kill-back-to-indentation)
 
 ;;----------------------------------------------------------------------------
-;; Page break lines
+;; Page break lines - e.g. right below here...
 ;;----------------------------------------------------------------------------
 (require 'formfeed-hline)
 (formfeed-hline-mode 1)
+
+
 
 
 ;;----------------------------------------------------------------------------
