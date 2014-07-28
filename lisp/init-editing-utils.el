@@ -353,4 +353,28 @@ With arg N, insert N newlines."
 (diminish 'guide-key-mode)
 
 
+
+;; Make code purdy, stolen from Dan Larkin and Emacs Starter Kit
+(defun untabify-buffer ()
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+(defun indent-buffer ()
+  (interactive)
+  (indent-region (point-min) (point-max)))
+
+(defun cleanup-buffer ()
+  "Perform a bunch of operations on the whitespace content of a buffer."
+  (interactive)
+  (if (< (buffer-size) 100000)
+      (progn
+	(indent-buffer)
+	(untabify-buffer)
+	(delete-trailing-whitespace)
+	(message "Cleaned up buffer."))
+    (message "Didn't clean up buffer.")))
+
+(global-set-key (kbd "C-c n") 'cleanup-buffer)
+
+
 (provide 'init-editing-utils)
