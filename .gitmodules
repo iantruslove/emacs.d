@@ -1,0 +1,3 @@
+[submodule "site-lisp/clojurescript-mode"]
+	path = site-lisp/clojurescript-mode
+	url = git@github.com:iantruslove/clojurescript-mode.git
