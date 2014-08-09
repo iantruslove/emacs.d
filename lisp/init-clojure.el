@@ -2,7 +2,6 @@
 ;; See also init-clojure-cider.el
 
 (require-package 'clojure-mode)
-(require-package 'clojure-test-mode)
 (require-package 'cljsbuild-mode)
 (require-package 'elein)
 
@@ -33,7 +32,10 @@
 
 (after-load 'clojure-mode
   (add-hook 'clojure-mode-hook 'sanityinc/lisp-setup)
-  (add-hook 'clojure-mode-hook 'subword-mode))
+  (add-hook 'clojure-mode-hook 'subword-mode)
+  (add-hook 'clojure-mode-hook
+            (lambda ()
+              (define-key clojure-mode-map (kbd "C-c C-t") 'clojure-jump-between-tests-and-code))))
 
 
 

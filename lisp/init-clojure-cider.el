@@ -32,7 +32,7 @@
   (add-hook 'cider-mode-hook
             (lambda ()
               (define-key cider-mode-map (kbd "C-c t") 'cider-test-show-report)
-              (define-key cider-mode-map (kbd "C-c C-t") 'clojure-jump-between-tests-and-code))))
+              (define-key cider-mode-map (kbd "C-c C-t") nil))))
 
 (let ((sonian-stuff "~/projects/sa-safe/.elisp/sonian.el"))
   (when (file-exists-p sonian-stuff)
