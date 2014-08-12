@@ -1,3 +1,6 @@
 [submodule "site-lisp/clojurescript-mode"]
 	path = site-lisp/clojurescript-mode
 	url = git@github.com:iantruslove/clojurescript-mode.git
+[submodule "site-lisp/cider"]
+	path = site-lisp/cider
+	url = https://github.com/clojure-emacs/cider.git
