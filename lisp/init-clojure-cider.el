@@ -2,6 +2,7 @@
 (require-package 'emacs '(24))
 
 (require 'cider)
+(require 'cider-test)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nrepl with Clojure
@@ -34,9 +35,6 @@
     (require 'sonian)
     ;; Turn on whitespace mode all
     ;; the time
-    (add-hook 'clojure-mode-hook 'whitespace-mode)
-    (require 'cider-test)
-    (setq cider-test-infer-test-ns 'cider-test-sonian-test-ns-fn)))
-
+    (add-hook 'clojure-mode-hook 'whitespace-mode)))
 
 (provide 'init-clojure-cider)
