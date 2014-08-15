@@ -25,17 +25,18 @@
   (add-hook 'slime-repl-mode-hook 'slime-clojure-repl-setup))
 
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Misc clojure tweaks
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'clojure-test-toggle)
 
 (after-load 'clojure-mode
   (add-hook 'clojure-mode-hook 'sanityinc/lisp-setup)
   (add-hook 'clojure-mode-hook 'subword-mode)
   (add-hook 'clojure-mode-hook
             (lambda ()
-              (define-key clojure-mode-map (kbd "C-c C-t") 'clojure-jump-between-tests-and-code))))
+              (define-key clojure-mode-map (kbd "C-c C-t") 'clojure-test-toggle))))
 
 
 
