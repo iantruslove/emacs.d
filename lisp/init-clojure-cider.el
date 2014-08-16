@@ -8,7 +8,7 @@
 ;; nrepl with Clojure
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq nrepl-popup-stacktraces nil)
+(setq cider-show-error-buffer 'except-in-repl)
 
 (after-load 'cider
   ;;(add-hook 'cider-repl-mode-hook 'set-auto-complete-as-completion-at-point-function)
