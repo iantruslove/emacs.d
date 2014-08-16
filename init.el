@@ -97,6 +97,7 @@
 (require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
+(require 'smooth-scrolling)
 (require-package 'gnuplot)
 (require-package 'lua-mode)
 (require-package 'htmlize)
