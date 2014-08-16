@@ -82,7 +82,7 @@
 
 ;;; github
 
-(require-package 'yagist)
+(require-package 'gist)
 (require-package 'github-browse-file)
 (require-package 'bug-reference-github)
 (add-hook 'prog-mode-hook 'bug-reference-prog-mode)
