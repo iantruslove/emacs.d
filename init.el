@@ -95,8 +95,10 @@
 
 (require 'init-dash)
 (require 'init-ledger)
-;; Extra packages which don't require any configuration
 
+(require 'init-w3m)
+
+;; Extra packages which don't require any configuration
 (require 'smooth-scrolling)
 (require-package 'gnuplot)
 (require-package 'lua-mode)
