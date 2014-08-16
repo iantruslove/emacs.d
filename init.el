@@ -49,6 +49,7 @@
 ;;(require 'init-auto-complete)
 (require 'init-company)
 (require 'init-windows)
+(require 'init-menu)
 (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
