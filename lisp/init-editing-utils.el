@@ -24,6 +24,7 @@
  line-spacing 0.2
  make-backup-files nil
  mouse-yank-at-point t
+ require-final-newline 'visit-save
  save-interprogram-paste-before-kill t
  scroll-preserve-screen-position 'always
  set-mark-command-repeat-pop t
