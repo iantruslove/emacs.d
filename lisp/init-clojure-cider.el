@@ -3,6 +3,8 @@
 
 (require 'cider)
 (require 'cider-test)
+(require 'cider-grimoire)
+(require 'cider-inspector)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nrepl with Clojure
